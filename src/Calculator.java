@@ -141,11 +141,11 @@ public class Calculator {
                             }
                         }
                         else if("√".contains(buttonValue)) {
-                            if(A != null){
+                            if(displayLabel.getText() != null){
                             double numDisplay = Double.parseDouble(displayLabel.getText());
                             numDisplay = Math.sqrt(numDisplay);
                             displayLabel.setText(RemoveZeroDecimal(numDisplay));
-                        }
+                            }
                         }
                     }
                 }
